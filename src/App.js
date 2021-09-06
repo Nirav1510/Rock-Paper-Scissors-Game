@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Play from "./components/Play";
 import Game from "./components/Game";
@@ -6,11 +6,23 @@ import Footer from "./components/Footer";
 import { Switch, Route } from "react-router-dom";
 
 const App = () => {
+  const [myChoice, setMyChoice] = useState("");
+  const [score, setScore] = useState(0);
+
   return (
     <React.Fragment>
       <div className="container">
-        <Header/>
+        <Header score={score} />
+        <Switch>
+          <Route exact path="/">
+            <Play setMyChoice={setMyChoice} />
+          </Route>
+          <Route path="/game">
+            <Game myChoice={myChoice} score={score} setScore={setScore} />
+          </Route>
+        </Switch>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };
