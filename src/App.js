@@ -1,17 +1,18 @@
-
 import React from "react";
+import Header from "./components/Header";
+import Play from "./components/Play";
+import Game from "./components/Game";
+import Footer from "./components/Footer";
+import { Switch, Route } from "react-router-dom";
 
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return (
-      <>
-        <h1>
-          Hello {name}
-        </h1>
-      </>
-    );
-  }
-}
+const App = () => {
+  return (
+    <React.Fragment>
+      <div className="container">
+        <Header/>
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default App;
