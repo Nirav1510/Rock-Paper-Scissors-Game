@@ -7,7 +7,7 @@ This is a solution of the challenge of `Frontend Mentor`.
 * Live-Demo : [Click-here](https://rps-game009.netlify.app)
 
 ## Tech-Stack
-* Front-end Framework: `React.js`
+* Framework: `React.js`
 * Styling: `Sass`
 
 ## Screenshots
@@ -30,6 +30,8 @@ This is a solution of the challenge of `Frontend Mentor`.
 ## Acknowledgements
 
 - [React](https://reactjs.org/)
+- [React-Router-Dom](https://knowbody.github.io/react-router-docs/)
+- [React-Hooks](https://reactjs.org/docs/hooks-intro.html)
 - [Sass](https://sass-lang.com/documentation)
 
 ## Author
