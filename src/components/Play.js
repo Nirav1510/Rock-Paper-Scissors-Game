@@ -5,7 +5,9 @@ const Play = ({setMyChoice}) => {
     return (
         <div className="play">
             <Link to="/game">
-                <div className="icon icon--paper"></div>
+                <div data-id="paper" className="icon icon--paper">
+                    Paper
+                </div>
             </Link>
         </div>
     )
