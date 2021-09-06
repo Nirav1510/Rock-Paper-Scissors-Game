@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Modal from "./Modal";
 
 const Footer = () => {
-  const [modal, setModal] = useState(fasle);
+  const [modal, setModal] = useState(false);
 
   const toggle = () => {
     setModal(!modal);
@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <React.Fragment>
       <footer className="footer">
-        <div class="attribution">
+        <div className="attribution">
           Challenge by{" "}
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
             Frontend Mentor
